@@ -1,1 +1,407 @@
+* {
+  box-sizing: border-box;
+}
 
+:root {
+  --margin: 0 80px; 
+  --padding: 60px 0;
+
+  --background-color: #e7e9e7;
+  --black: #1e1e1e;
+  --white: #ffffff;
+  --gray: #d7d7d7;
+  --green: #91d457;
+  --border: 2px solid #1e1e1e;
+  --border-radius: 20px;
+  --box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+body, html {
+  margin: 0;
+
+  font-family: Helvetica, sans-serif;
+  background-color: var(--background-color);
+}
+
+h1 {
+  margin: 0;
+
+  font-family: 'Climate Crisis', cursive;
+  font-size: 64px;
+  color: var(--black);
+}
+
+h2 {
+  margin: 0;
+  max-width: 600px;
+
+  font-size: 38px;
+  color: var(--black);
+}
+
+h3 {
+  margin: 0;
+
+  font-size: 28px;
+  color: var(--black);
+}
+
+p {
+  margin: 0;
+  padding-top: 10px;
+
+  font-size: 16px;
+  color: var(--black);
+}
+
+strong {
+  font-size: 20px;
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* header */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+
+  background-color: var(--black);
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.15);
+}
+
+.header-logo {
+  padding: 15px 30px 0 30px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--green);
+  font-family: 'Climate Crisis', cursive;
+  font-size: 20px;
+}
+
+.cart-icon {
+  padding-bottom: 5px;
+}
+
+/* navigation */
+
+.main-nav {
+  padding: 15px 30px;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--white);
+  border-bottom: var(--border);
+}
+
+.nav-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-around;
+
+  list-style-type: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1;
+  color: var(--black);
+}
+
+.nav-item a:hover {
+  border-bottom: var(--border);
+}
+
+/* HOMEPAGE */
+/* hero > welcome section */
+
+.hero {
+  margin: var(--margin);
+  padding: var(--padding);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text {
+  padding-left: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome {
+  padding-top: 60px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.welcome > img {
+  max-width: 750px;
+  height: auto;
+}
+
+.welcome-text {
+  padding-left: 30px;
+}
+
+.welcome-text > p {
+  padding: 10px 0 50px 0;
+
+  font-size: 18px
+}
+
+.btn {
+  padding: 10px 40px;
+
+  color: var(--black);
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.btn.buy-now-btn {
+
+  background-color: var(--black);
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.buy-now-btn:hover {
+  background-color: var(--green);
+  color: var(--black);
+}
+
+/* features section */
+
+.features {
+  padding: 80px;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  background-color: var(--black);
+  width: 100vw;
+}
+
+.features-wrapper {
+  max-width: 500px;
+  min-height: 350px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feature-item {
+  padding-left: 160px;
+  min-height: 125px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-item > h3 {
+  color: var(--white);
+}
+
+.feature-item > p {
+  color: var(--white);
+}
+
+.feature-item.cooking {
+  background-image: url(img/icons/air-fryer-icon.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.feature-item.app {
+  background-image: url(img/icons/touch-screen-icon.png);
+  background-repeat: no-repeat;
+  background-position: center left 22px;
+  background-size: 130px;
+}
+
+.feature-item.wifi {
+  background-image: url(img/icons/wifi-icon.png);
+  background-repeat: no-repeat;
+  background-position: center left 22px;
+  background-size: 130px;
+}
+
+.feature-item.heart {
+  background-image: url(img/icons/heart-icon.png);
+  background-repeat: no-repeat;
+  background-position: center left 35px;
+  background-size: 100px;
+}
+
+/* cookbook section */
+
+.cookbook {
+  margin: var(--margin);
+  padding: var(--padding);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.recipe-cards-wrapper {
+  width: 100%;
+  padding: var(--padding);
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+}
+
+.recipe-card > img {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.recipe-card-text {
+  padding: 25px;
+  max-width: 336px;
+}
+
+.btn.discover-more-btn {
+  padding: 10px 30px;
+
+  display: inline-block;
+
+  background-color: var(--white);
+}
+
+.discover-more-btn:hover {
+  background-color: var(--green);
+}
+
+/* warranty section */
+
+.warranty {
+  padding: 80px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  background-color: var(--black);
+}
+
+.warranty > h3 {
+  color: var(--green);
+}
+
+.warranty > p {
+  max-width: 750px;
+
+  color: var(--white);
+}
+
+/* footer */
+/* newsletter section */
+
+.footer {
+  padding: 80px 80px 20px 80px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--gray);
+}
+
+.newsletter {
+  padding-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  text-align: center;
+}
+
+.form {
+  padding: 15px 0;
+}
+
+input[type=email] {
+  padding: 10px 40px;
+  min-width: 350px;
+
+  border: var(--border);
+  border-radius: var(--border-radius);
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+.submit-btn:hover {
+  background-color: var(--green);
+}
+
+.unsubscribe {
+  padding-top: 10px;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+/* share section */
+
+.share {
+  width: 100%;
+  padding: 40px 0;
+
+  border-top: var(--border);
+}
+
+.links-list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+
+  list-style-type: none;
+}
+
+.link-item {
+  padding: 0 10px;
+}
+
+/* copyright */
+
+.copyright > p {
+  font-size: 14px;
+}
