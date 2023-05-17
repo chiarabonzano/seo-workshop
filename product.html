@@ -4,19 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AirPro Fryer - Discover Product</title>
+  <title>AirPro Fryer</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
     <div class="header-logo">
-      <a href="index.html" class="logo">logo</a>
+      <a href="index.html" class="logo">AirPro Fryer</a>
+      <a href="#" class="cart-icon">
+        <img src="img/icons/air-pro-fryer-cart-icon.svg" alt="shopping cart icon" width="30" height="auto">
+      </a>
     </div>
-    <nav class="main-navigation">
-      <ul>
-        <li><a href="pdp.html">Product</a></li>
-        <li><a href="cookbook.html">Cookbook</a></li>
-        <li><a href="contacts.html">Contacts</a></li>
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="product.html">Product</a></li>
+        <li class="nav-item"><a href="cookbook.html">Cookbook</a></li>
+        <li class="nav-item"><a href="contacts.html">Contacts</a></li>
       </ul>
     </nav>
   </header>
@@ -82,25 +88,29 @@
     <p>At AirPro Fryer, we are committed to providing our customers with the best possible experience. Our team of experts is always ready to assist you with any questions or concerns you may have. We also offer a wide range of recipes and cooking tips to help you get the most out of your air fryer.</p>
   </section>
 
-  <footer>
-    <div class="subscribe">
+  <footer class="footer">
+    <section class="newsletter">
       <p><strong>Join our mailing list</strong></p>
-      <p>Keep me updated with the latest news, plus tips and tricks</p>
-      <div class="subscribe-box">
-        <p>Email address</p>
-      </div>
-      <div class="button-pill">Submit</div>
+      <p>Keep me updated with the latest news, plus tips and tricks!</p>
+      <form action="" method="get" class="form-example">
+        <div class="form">
+          <input type="email" name="email" class="email" placeholder="example@email.com" required>
+        </div>
+      </form>
+      <a href="#" class="btn submit-btn">Submit</a>
       <a href="#" class="unsubscribe">Unsubscribe</a>
-    </div>
-    <div class="social">
-      <p>Share this recipe</p>
-      <div class="social icons">
-        <a href="#" class="instagram"></a>
-        <a href="#" class="linkedin"></a>
-        <a href="#" class="twitter"></a>
-        <a href="#" class="facebook"></a>
-      </div>
+    </section>
+    <section class="share">
+      <ul class="links-list">
+        <li class="link-item facebook"><a href="#"><img src="img/icons/facebook-icon.svg" alt="facebook logo outline" class="link-img" width="24px" height="24px"></a></li>
+        <li class="link-item instagram"><a href="#"><img src="img/icons/instagram-icon.svg" alt="instagram logo outline" class="link-img" width="24px" height="24px"></a></li>
+        <li class="link-item twitter"><a href="#"><img src="img/icons/twitter-icon.svg" alt="twitter logo outline" class="link-img" width="24px" height="24px"></a></li>
+        <li class="link-item linkedin"><a href="#"><img src="img/icons/linkedin-icon.svg" alt="linkedin logo outline" class="link-img" width="24px" height="24px"></a></li>
+      </ul>
+    </section>
+    <section class="copyright">
       <p>© 2023 AirPro Fryer All Rights Reserved.</p>
-    </div>
+    </section>
   </footer>
 </body>
+</html>
