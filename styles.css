@@ -149,7 +149,7 @@ a {
 
 .welcome {
   padding-top: 60px;
-
+  
   display: flex;
   justify-content: center;
 }
@@ -165,20 +165,20 @@ a {
 
 .welcome-text > p {
   padding: 10px 0 50px 0;
-
+  
   font-size: 18px
 }
 
 .btn {
   padding: 10px 40px;
-
+  
   color: var(--black);
   border: var(--border);
   border-radius: var(--border-radius);
 }
 
 .btn.buy-now-btn {
-
+  
   background-color: var(--black);
   color: var(--white);
   text-transform: uppercase;
@@ -193,10 +193,10 @@ a {
 
 .features {
   padding: 80px;
-
+  
   display: flex;
   justify-content: space-evenly;
-
+  
   background-color: var(--black);
   width: 100vw;
 }
@@ -204,7 +204,7 @@ a {
 .features-wrapper {
   max-width: 500px;
   min-height: 350px;
-
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -213,7 +213,7 @@ a {
 .feature-item {
   padding-left: 160px;
   min-height: 125px;
-
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -259,17 +259,45 @@ a {
 .cookbook {
   margin: var(--margin);
   padding: var(--padding);
-
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
+.cookbook-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 38px 60px 0 60px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  margin: var(--margin);
+  padding: 110px 0 10px 0;
+  border-bottom: 2px solid black;
+}
+
+.filter {
+  margin-right: 40px;
+}
+
+.filter:nth-child(2) {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
 .recipe-cards-wrapper {
   width: 100%;
   padding: var(--padding);
-
+  
   display: flex;
   justify-content: space-evenly;
 }
@@ -304,6 +332,29 @@ a {
 
 .discover-more-btn:hover {
   background-color: var(--green);
+}
+
+.fryer-card {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fryer-card-img {
+  width: 50%;
+}
+
+.fryer-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding-right: 40px;
+}
+
+.buy-now-btn {
+  text-align: center;
 }
 
 /* warranty section */
