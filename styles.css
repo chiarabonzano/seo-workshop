@@ -98,6 +98,10 @@ img {
   padding-bottom: 5px;
 }
 
+.cart-icon > img {
+  width: 28px;
+}
+
 /* navigation */
 
 .main-nav {
