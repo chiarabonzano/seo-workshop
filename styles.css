@@ -64,6 +64,11 @@ a {
   color: var(--black);
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 /* header */
 
 .header {
@@ -150,8 +155,8 @@ a {
 .welcome {
   padding-top: 60px;
   
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .welcome > img {
@@ -285,24 +290,18 @@ a {
   border-bottom: 2px solid black;
 }
 
-.filter {
-  margin-right: 40px;
-}
-
-.filter:nth-child(2) {
-  background-color: #1e1e1e;
-  color: #ffffff;
-}
-
 .recipe-cards-wrapper {
-  width: 100%;
   padding: var(--padding);
   
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 40px;
 }
 
 .recipe-card {
+  max-width: 340px;
+
   display: flex;
   flex-direction: column;
 
@@ -332,29 +331,6 @@ a {
 
 .discover-more-btn:hover {
   background-color: var(--green);
-}
-
-.fryer-card {
-  padding-top: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.fryer-card-img {
-  width: 50%;
-}
-
-.fryer-card-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: #ffffff;
-  padding-right: 40px;
-}
-
-.buy-now-btn {
-  text-align: center;
 }
 
 /* warranty section */
@@ -455,4 +431,44 @@ input[type=email] {
 
 .copyright > p {
   font-size: 14px;
+}
+
+
+/* COOKBOOK PAGE */
+
+.filter {
+  margin-right: 40px;
+}
+
+.filter:nth-child(2) {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.cookbook-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.fryer-card {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fryer-card-img {
+  width: 50%;
+}
+
+.fryer-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding-right: 40px;
+}
+
+.buy-now-btn {
+  text-align: center;
 }
