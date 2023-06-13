@@ -28,6 +28,7 @@ h1 {
 
   font-family: 'Climate Crisis', cursive;
   font-size: 64px;
+  font-weight: bolder;
   color: var(--black);
 }
 
@@ -588,4 +589,64 @@ input[type=email] {
 
 .buy-now-btn {
   text-align: center;
+}
+
+/* ---------- RECIPE PAGE ---------- */
+.recipe-container {
+  margin: var(--margin);
+  padding: var(--padding);
+}
+
+.recipe-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe-intro > img {
+  padding: var(--padding);
+}
+
+.recipe-instructions {
+  width: 100%;
+}
+
+.recipe-info {
+  padding-bottom: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  border-bottom: var(--border);
+}
+
+.recipe-info-box {
+  text-align: center;
+  border-right: var(--border);
+}
+
+.recipe-info-box:last-child {
+  border-right: none;
+}
+
+.recipe-info-box > p {
+  padding-top: 0;
+}
+
+.recipe {
+  display: grid;
+  grid-template-columns: .5fr 1.5fr;
+  column-gap: 40px;
+}
+
+.recipe-list {
+  margin: 40px 0 20px 0;
+}
+
+.recipe-list-item {
+  padding-top: 8px;
+}
+
+.step {
+  margin: 40px 0 20px 0;
 }
