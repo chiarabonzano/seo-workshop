@@ -427,6 +427,99 @@ input[type=email] {
   font-size: 14px;
 }
 
+/* ---------- PRODUCT PAGE ---------- */
+.product {
+  margin: var(--margin);
+  padding: var(--padding);
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.product > img {
+  padding-right: 40px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.product-details > ul {
+  margin: var(--padding);
+}
+
+.ratings-and-price {
+  margin-bottom: 60px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  border-bottom: var(--border);
+}
+
+.ratings-and-price > p {
+  padding-top: 0;
+
+  text-align: end;
+}
+
+.stars {
+  padding-bottom: 5px;
+
+  display: flex;
+  align-items: center;
+}
+
+.stars > img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.more-details {
+  background-color: var(--white);
+}
+
+.details-icons {
+  margin: var(--margin);
+  padding-top: 60px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-product {
+  max-width: 180px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.icon-product > img {
+  width: auto;
+}
+
+.product-features {
+  margin: var(--margin);
+  padding: var(--padding);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+}
+
+.product-feature {
+  padding-bottom: 40px;
+}
+
+.product-feature > h3 {
+  color: var(--green);
+}
 
 /* ---------- COOKBOOK PAGE ---------- */
 
