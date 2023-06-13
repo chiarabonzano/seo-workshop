@@ -148,8 +148,6 @@ img {
 }
 
 .hero-text {
-  padding-left: 40px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -439,6 +437,7 @@ input[type=email] {
 
 .product > img {
   padding-right: 40px;
+  max-width: 1000px;
 }
 
 .product-details {
@@ -674,4 +673,238 @@ input[type=email] {
   padding-top: 40px;
 
   max-width: 560px;
+}
+
+/* ---------- MOBILE VIEW ---------- */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  strong {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  /* ---------- homepage - mobile ---------- */
+  .hero {
+    margin: 0 20px;
+  }
+
+  .hero-text {
+    text-align:  center;
+  }
+
+  .hero-text > h3 {
+    padding-top: 10px;
+  }
+
+  .welcome {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcome-text {
+    padding-top: 40px;
+    padding-left: 0;
+
+    text-align: center;
+  }
+
+  .features {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feature-item {
+    margin-bottom: 40px;
+  }
+
+  .cookbook {
+    margin: 0 20px;
+  }
+
+  .recipe-cards-wrapper {
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recipe-card-text {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .warranty {
+    padding: 40px 20px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  /* ---------- product page - mobile ---------- */
+  .product {
+    margin: 0 20px;
+
+    display: block;
+  }
+
+  .product-details {
+    padding-top: 40px;
+  }
+
+  .product-details > ul {
+    margin: 20px 0 40px 0;
+  }
+
+  li {
+    font-size: 14px;
+  }
+
+  .ratings-and-price > p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ratings-and-price > p > strong {
+    font-size: 16px;
+  }
+
+  .details-icons {
+    margin: 0 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .product-features {
+    margin: 0 20px;
+
+    display: block;
+  }
+
+  /* ---------- cookbook page - mobile ---------- */
+  .cookbook-intro {
+    padding: 40px 20px;
+  }
+
+  .filters {
+    margin: 0 20px;
+    padding: 0;
+
+    justify-content: space-around;
+  }
+
+  .filter {
+    margin: 0 0 20px 0;
+    padding: 10px 25px;
+  }
+
+  .cookbook-wrapper {
+    margin: 0 20px;
+
+    display: inline-block;
+  }
+
+  .cookbook-wrapper > .recipe-cards-wrapper {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cookbook-wrapper > .recipe-cards-wrapper > .recipe-card:last-child {
+    display: none;
+  }
+
+  .banner {
+    margin: 0 20px;
+  }
+
+  .fryer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fryer-card-text {
+    padding: 0;
+  }
+
+  .fryer-card-text > h3 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .fryer-card-text > .buy-now-btn {
+    margin-bottom: 40px;
+  }
+
+  /* ---------- recipe page - mobile ---------- */
+  .recipe-container {
+    margin: 0 20px;
+  }
+
+  .recipe-intro {
+    text-align: center;
+  }
+
+  .recipe-intro > img {
+    padding: 20px 0;
+  }
+
+  .recipe-info {
+    padding: 20px 0;
+  }
+
+  .recipe {
+    display: block;
+  }
+
+  .recipe-list {
+    padding: 0;
+
+    list-style-type: none;
+  }
+
+  .recipe-list-item {
+    padding-left: 20px;
+  }
+
+  /* ---------- contacts page - mobile ---------- */
+  .contacts-wrapper {
+    margin: 0 20px;
+
+    display: block;
+  }
+
+  .contacts-container {
+    padding-bottom: 40px ;
+  }
+
+  .contacts-container > img  {
+    padding-top: 15px;
+  }
+
+  .contact-section {
+    padding-top: 10px;
+  }
 }
