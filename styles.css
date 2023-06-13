@@ -650,3 +650,28 @@ input[type=email] {
 .step {
   margin: 40px 0 20px 0;
 }
+
+/* ---------- CONTACTS PAGE ---------- */
+.contacts-wrapper {
+  margin: var(--margin);
+  padding: var(--padding);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+}
+
+.contacts-title {
+  padding-bottom: 8px;
+  border-bottom: var(--border);
+}
+
+.contact-section {
+  padding-top: 40px;
+}
+
+.contacts-container > img {
+  padding-top: 40px;
+
+  max-width: 560px;
+}
