@@ -69,13 +69,13 @@ img {
   height: auto;
 }
 
-/* header */
-
+/* ---------- header ---------- */
 .header {
   display: flex;
   flex-direction: column;
   position: sticky;
   top: 0;
+  z-index: 2;
 
   background-color: var(--black);
   box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.15);
@@ -102,8 +102,7 @@ img {
   width: 28px;
 }
 
-/* navigation */
-
+/* ---------- navigation ---------- */
 .main-nav {
   padding: 15px 30px;
 
@@ -136,9 +135,9 @@ img {
   border-bottom: var(--border);
 }
 
-/* HOMEPAGE */
-/* hero > welcome section */
+/* ---------- HOMEPAGE ---------- */
 
+/* ---------- welcome section ---------- */
 .hero {
   margin: var(--margin);
   padding: var(--padding);
@@ -198,8 +197,7 @@ img {
   color: var(--black);
 }
 
-/* features section */
-
+/* ---------- feature section ---------- */
 .features {
   padding: 80px;
   
@@ -263,8 +261,7 @@ img {
   background-size: 100px;
 }
 
-/* cookbook section */
-
+/* ---------- cookbook section ---------- */
 .cookbook {
   margin: var(--margin);
   padding: var(--padding);
@@ -337,8 +334,7 @@ img {
   background-color: var(--green);
 }
 
-/* warranty section */
-
+/* ---------- warranty section ---------- */
 .warranty {
   padding: 80px;
 
@@ -361,9 +357,7 @@ img {
   color: var(--white);
 }
 
-/* footer */
-/* newsletter section */
-
+/* ---------- footer ---------- */
 .footer {
   padding: 80px 80px 20px 80px;
 
@@ -408,8 +402,6 @@ input[type=email] {
   text-decoration: underline;
 }
 
-/* share section */
-
 .share {
   width: 100%;
   padding: 40px 0;
@@ -431,46 +423,74 @@ input[type=email] {
   padding: 0 10px;
 }
 
-/* copyright */
-
 .copyright > p {
   font-size: 14px;
 }
 
 
-/* COOKBOOK PAGE */
+/* ---------- COOKBOOK PAGE ---------- */
 
 .filter {
   margin-right: 40px;
 }
 
 .filter:nth-child(2) {
-  background-color: #1e1e1e;
-  color: #ffffff;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .cookbook-wrapper {
+  margin: var(--margin);
+
   display: flex;
   justify-content: center;
+}
+
+.banner {
+  margin: var(--margin);
+  padding: var(--padding);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fryer-card {
-  padding-top: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  max-width: 1080px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  background-color: var(--white);
+}
+
+.banner-wrapper > img {
+  max-width: 100px;
+  max-height: 100px;
+
+  position: relative;
+  top: 103px;
 }
 
 .fryer-card-img {
-  width: 50%;
+  max-width: 630px;
 }
 
 .fryer-card-text {
+  padding: 40px 40px 40px 0;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  background-color: #ffffff;
-  padding-right: 40px;
+  justify-content: center;
+}
+
+.fryer-card-text > h3 {
+  font-family: 'Climate Crisis', cursive;
+}
+
+.banner-list {
+  margin: 0;
+  padding: 40px 0 40px 15px;
 }
 
 .buy-now-btn {
